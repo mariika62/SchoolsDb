@@ -29,21 +29,6 @@ namespace DataLayer
             }
         }
 
-        public void Delete(string key)
-        {
-            Class classFromDb = Read(key);
-
-            if (classFromDb != null)
-            {
-                dbContext.Classes.Remove(classFromDb);
-                dbContext.SaveChanges();
-            }
-            else
-            {
-                throw new InvalidOperationException("Class with that id does not exist!");
-            }
-        }
-
         public Class Read(string key, bool useNavigationalProperties = false)
         {
             try
@@ -120,6 +105,27 @@ namespace DataLayer
                     classFromDb.Students = students;
                 }
                 dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public void Delete(string key)
+        {
+            try
+            {
+                Class classFromDb = Read(key);
+
+                if (classFromDb != null)
+                {
+                    dbContext.Classes.Remove(classFromDb);
+                    dbContext.SaveChanges();
+                }
+                else
+                {
+                    throw new InvalidOperationException("Class with that id does not exist!");
+                }
             }
             catch (Exception)
             {

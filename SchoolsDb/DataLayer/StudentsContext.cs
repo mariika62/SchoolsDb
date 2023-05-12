@@ -43,21 +43,6 @@ namespace DataLayer
             }
         }
 
-        public void Delete(string key)
-        {
-            Student studentFromDb = Read(key);
-
-            if (studentFromDb != null)
-            {
-                dbContext.Students.Remove(studentFromDb);
-                dbContext.SaveChanges();
-            }
-            else
-            {
-                throw new InvalidOperationException("Student with that id does not exist!");
-            }
-        }
-
         public Student Read(string key, bool useNavigationalProperties = false)
         {
             try
@@ -141,6 +126,27 @@ namespace DataLayer
                 }
 
                 dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public void Delete(string key)
+        {
+            try
+            {
+                Student studentFromDb = Read(key);
+
+                if (studentFromDb != null)
+                {
+                    dbContext.Students.Remove(studentFromDb);
+                    dbContext.SaveChanges();
+                }
+                else
+                {
+                    throw new InvalidOperationException("Student with that id does not exist!");
+                }
             }
             catch (Exception)
             {

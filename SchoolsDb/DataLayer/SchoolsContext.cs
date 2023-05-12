@@ -21,27 +21,45 @@ namespace DataLayer
         {
             try
             {
+                List<Student> students = new List<Student>();
+                List<Class> classes = new List<Class>();
+
+                foreach (Student s in item.Students)
+                {
+                    Student sFromDb = dbContext.Students.Find(s.Id);
+
+                    if (sFromDb != null)
+                    {
+                        students.Add(sFromDb);
+                    }
+                    else
+                    {
+                        students.Add(s);
+                    }
+                }
+
+                foreach (Class c in item.Classes)
+                {
+                    Class cFromDb = dbContext.Classes.Find(c.Id);
+
+                    if (cFromDb != null)
+                    {
+                        classes.Add(cFromDb);
+                    }
+                    else
+                    {
+                        classes.Add(c);
+                    }
+                }
+                item.Students = students;
+                item.Classes = classes;
+
                 dbContext.Schools.Add(item);
                 dbContext.SaveChanges();
             }
             catch (Exception)
             {
                 throw;
-            }
-        }
-
-        public void Delete(string key)
-        {
-            School schoolFromDb = Read(key);
-
-            if (schoolFromDb != null)
-            {
-                dbContext.Schools.Remove(schoolFromDb);
-                dbContext.SaveChanges();
-            }
-            else
-            {
-                throw new InvalidOperationException("School with that id does not exist!");
             }
         }
 
@@ -141,6 +159,27 @@ namespace DataLayer
                 }
 
                 dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public void Delete(string key)
+        {
+            try
+            {
+                School schoolFromDb = Read(key);
+
+                if (schoolFromDb != null)
+                {
+                    dbContext.Schools.Remove(schoolFromDb);
+                    dbContext.SaveChanges();
+                }
+                else
+                {
+                    throw new InvalidOperationException("School with that id does not exist!");
+                }
             }
             catch (Exception)
             {

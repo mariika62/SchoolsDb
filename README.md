@@ -1,2 +1,2 @@
 # SchoolsDb
-First try :)
+Maria, Ralitsa, Kris and Todor made this project :)

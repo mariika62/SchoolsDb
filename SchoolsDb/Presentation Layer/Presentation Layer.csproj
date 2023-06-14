@@ -9,4 +9,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj" />
+  </ItemGroup>
+
 </Project>

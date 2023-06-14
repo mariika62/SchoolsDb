@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31402.337
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{D9CBAAC3-B07E-401F-AC4D-2A3ACA727ACC}"
 EndProject
@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingLayer", "TestingLayer\TestingLayer.csproj", "{F75BD770-2F9A-4E6B-86A2-099A3BDD51D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{DA0A9E27-0BE8-4F1B-A290-FD3EE330835E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLayer", "ServiceLayer\ServiceLayer.csproj", "{DA0A9E27-0BE8-4F1B-A290-FD3EE330835E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation Layer", "Presentation Layer\Presentation Layer.csproj", "{3DE16F17-1499-4A64-9ABF-5D2F2D037F2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DA0A9E27-0BE8-4F1B-A290-FD3EE330835E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA0A9E27-0BE8-4F1B-A290-FD3EE330835E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA0A9E27-0BE8-4F1B-A290-FD3EE330835E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE16F17-1499-4A64-9ABF-5D2F2D037F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE16F17-1499-4A64-9ABF-5D2F2D037F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE16F17-1499-4A64-9ABF-5D2F2D037F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE16F17-1499-4A64-9ABF-5D2F2D037F2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,7 @@ namespace TestingLayer
     [TestFixture]
     public class StudentContextTest
     {
-        private StudentsContext context = new StudentContextTest(SetupFixture.dbContext);
+        private StudentsContext context = new StudentsContext(SetupFixture.dbContext);
         private Student student;
         private Class cl1;
         private School sc1;
@@ -24,7 +24,7 @@ namespace TestingLayer
             sc1 = new("Akad. K. Popov", "Chemshir 11", "High School");
             cl1 = new("11j", "Liliana Rusinova", sc1);
 
-            student = new("Todor Demirov", 15, 5.50, sc1, cl1);
+            student = new("Todor Demirov", 15, 5.50, 25, sc1, cl1);
 
             context.Create(student);
         }

@@ -25,6 +25,8 @@ namespace Presentation_Layer
         {
             InitializeComponent();
             LoadStudents();
+            LoadClass();
+            LoadSchools();
             studentsDataGridView.ReadOnly = true;
         }
 

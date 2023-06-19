@@ -150,7 +150,7 @@ namespace Presentation_Layer
         {
             if (studentsBox.SelectedIndex >= 0 && studentsBox.SelectedIndex < studentsBox.Items.Count)
             {
-                selectedSchool = studentsBox.Items[studentsBox.SelectedIndex] as School;
+                selectedStudent = studentsBox.Items[studentsBox.SelectedIndex] as Student;
             }
         }
         private void ClearTextBoxes()

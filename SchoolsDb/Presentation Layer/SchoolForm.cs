@@ -28,12 +28,6 @@ namespace Presentation_Layer
             LoadStudents();
             schoolGridView.ReadOnly = true;
         }
-
-        private void nameTxtBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void createBtn_Click_1(object sender, EventArgs e)
         {
             try

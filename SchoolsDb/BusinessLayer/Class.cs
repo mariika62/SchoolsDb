@@ -40,5 +40,9 @@ namespace BusinessLayer
             Students = new List<Student>();
             School = school;
         }
+        public override string ToString()
+        {
+            return $"<{Id}>-{Name}-{Major}-{ClassTeacher}-{AverageGrade}-{Students}-{School}";
+        }
     }
 }

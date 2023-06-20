@@ -31,5 +31,9 @@ namespace BusinessLayer
             Students = new List<Student>();
             Classes = new List<Class>();
         }
+        public override string ToString()
+        {
+            return $"<{Id}>-{Name}-{Address}-{Type}-{Students}-{Classes}";
+        }
     }
 }

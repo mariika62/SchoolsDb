@@ -41,6 +41,10 @@ namespace BusinessLayer
             School = school;
             Class = @class;
         }
+        public override string ToString()
+        {
+            return $"<{Id}>-{Name}-{Age}-{AverageGrade}-{Telephone}-{NumberInClass}-{School}-{Class}";
+        }
     }
 }
 

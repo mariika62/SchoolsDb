@@ -115,12 +115,13 @@ namespace Presentation_Layer
             // studentsDataGridView
             // 
             this.studentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentsDataGridView.Location = new System.Drawing.Point(629, 184);
+            this.studentsDataGridView.Location = new System.Drawing.Point(629, 182);
             this.studentsDataGridView.Name = "studentsDataGridView";
             this.studentsDataGridView.RowHeadersWidth = 51;
             this.studentsDataGridView.RowTemplate.Height = 29;
             this.studentsDataGridView.Size = new System.Drawing.Size(300, 188);
             this.studentsDataGridView.TabIndex = 5;
+            this.studentsDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studentsDataGridView_CellClick);
             this.studentsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1

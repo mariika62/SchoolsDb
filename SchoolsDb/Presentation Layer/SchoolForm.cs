@@ -34,8 +34,7 @@ namespace Presentation_Layer
             {
                 if (ValidationManager.IsValidString(nameTxtBox.Text)
                     && ValidationManager.IsValidString(adrressTxtBox.Text)
-                    && ValidationManager.IsValidString(typeTxtBox.Text)
-                    && selectedSchool != null)
+                    && ValidationManager.IsValidString(typeTxtBox.Text))
                 {
                     string name = nameTxtBox.Text;
                     string address = adrressTxtBox.Text;
@@ -102,7 +101,7 @@ namespace Presentation_Layer
                     MessageBox.Show("School ☠️ successfully!", "💀", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ClearTextBoxes();
                     selectedSchool = null;
-                    LoadClasses();
+                    LoadSchools();
                 }
                 else
                 {
@@ -195,6 +194,17 @@ namespace Presentation_Layer
         public void LoadSchools()
         {
             schoolGridView.DataSource = dbManager.ReadAll();
+        }
+
+        private void schoolGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+            {
+                MessageBox.Show("🔥");
+                return;
+            }
+            selectedSchool = schoolGridView.Rows[e.RowIndex].DataBoundItem as School;
+            FillTextBoxes();
         }
     }
 }

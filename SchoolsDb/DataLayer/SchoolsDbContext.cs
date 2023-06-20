@@ -20,7 +20,7 @@ namespace DataLayer
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-GK4F9OM\\SQLEXPRESS;Database=SchoolsDb;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-IVFJCBT;Database=SchoolsDb;Trusted_Connection=True;");
             }
 
             base.OnConfiguring(optionsBuilder);

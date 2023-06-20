@@ -35,8 +35,7 @@ namespace Presentation_Layer
             try
             {
                 if (ValidationManager.IsValidString(nameTxtBox.Text)
-                    && ValidationManager.IsValidString(phTxtBox.Text)
-                    && selectedStudent != null)
+                    && ValidationManager.IsValidString(phTxtBox.Text))
                 {
                     selectedStudent.Name = nameTxtBox.Text;
                     selectedStudent.AverageGrade = Convert.ToDouble(avgNUAD.Value);
@@ -76,7 +75,7 @@ namespace Presentation_Layer
                     Class? @class= classLB.SelectedItem as Class;
 
                     //string name, int age, double averageGrade, int numberInClass, School school, Class @class, string telephone = null
-                    Student student = new Student(name, age, averageGrade, numberInclass, school, @class);
+                    Student student = new Student(name, age, averageGrade, numberInclass, school, @class, telephone);
                     dbManager.Create(student);
 
                     MessageBox.Show("Student created successfully! :)", "😎", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -193,6 +192,17 @@ namespace Presentation_Layer
             {
                 selectedClass = classLB.Items[classLB.SelectedIndex] as Class;
             }
+        }
+
+        private void studentsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+            {
+                MessageBox.Show("🔥");
+                return;
+            }
+            selectedStudent = studentsDataGridView.Rows[e.RowIndex].DataBoundItem as Student;
+            FillTextBoxes();
         }
     }
 }

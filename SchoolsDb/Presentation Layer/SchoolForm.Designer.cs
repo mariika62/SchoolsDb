@@ -28,212 +28,208 @@
         /// </summary>
         private void InitializeComponent()
         {
-            nameTxtBox = new TextBox();
-            createBtn = new Button();
-            label1 = new Label();
-            adrressTxtBox = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            typeTxtBox = new TextBox();
-            studentsBox = new ListBox();
-            label4 = new Label();
-            classesBox = new ListBox();
-            label5 = new Label();
-            schoolGridView = new DataGridView();
-            label6 = new Label();
-            updateBtn = new Button();
-            deleteBtn = new Button();
-            ClearBtn = new Button();
-            CloseBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)schoolGridView).BeginInit();
-            SuspendLayout();
+            this.nameTxtBox = new System.Windows.Forms.TextBox();
+            this.createBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.adrressTxtBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.typeTxtBox = new System.Windows.Forms.TextBox();
+            this.studentsBox = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.classesBox = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.schoolGridView = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.updateBtn = new System.Windows.Forms.Button();
+            this.deleteBtn = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.CloseBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.schoolGridView)).BeginInit();
+            this.SuspendLayout();
             // 
             // nameTxtBox
             // 
-            nameTxtBox.Location = new Point(27, 55);
-            nameTxtBox.Name = "nameTxtBox";
-            nameTxtBox.Size = new Size(125, 27);
-            nameTxtBox.TabIndex = 0;
-            nameTxtBox.TextChanged += nameTxtBox_TextChanged;
+            this.nameTxtBox.Location = new System.Drawing.Point(27, 55);
+            this.nameTxtBox.Name = "nameTxtBox";
+            this.nameTxtBox.Size = new System.Drawing.Size(125, 27);
+            this.nameTxtBox.TabIndex = 0;
             // 
             // createBtn
             // 
-            createBtn.Location = new Point(486, 259);
-            createBtn.Name = "createBtn";
-            createBtn.Size = new Size(94, 29);
-            createBtn.TabIndex = 1;
-            createBtn.Text = "Create";
-            createBtn.UseVisualStyleBackColor = true;
-            createBtn.Click += createBtn_Click_1;
+            this.createBtn.Location = new System.Drawing.Point(486, 259);
+            this.createBtn.Name = "createBtn";
+            this.createBtn.Size = new System.Drawing.Size(94, 29);
+            this.createBtn.TabIndex = 1;
+            this.createBtn.Text = "Create";
+            this.createBtn.UseVisualStyleBackColor = true;
+            this.createBtn.Click += new System.EventHandler(this.createBtn_Click_1);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(65, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(49, 20);
-            label1.TabIndex = 2;
-            label1.Text = "Name";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(65, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Name";
             // 
             // adrressTxtBox
             // 
-            adrressTxtBox.Location = new Point(226, 55);
-            adrressTxtBox.Name = "adrressTxtBox";
-            adrressTxtBox.Size = new Size(125, 27);
-            adrressTxtBox.TabIndex = 3;
-            adrressTxtBox.TextChanged += adrressTxtBox_TextChanged;
+            this.adrressTxtBox.Location = new System.Drawing.Point(226, 55);
+            this.adrressTxtBox.Name = "adrressTxtBox";
+            this.adrressTxtBox.Size = new System.Drawing.Size(125, 27);
+            this.adrressTxtBox.TabIndex = 3;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(258, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(62, 20);
-            label2.TabIndex = 4;
-            label2.Text = "Address";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(258, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Address";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(453, 20);
-            label3.Name = "label3";
-            label3.Size = new Size(40, 20);
-            label3.TabIndex = 5;
-            label3.Text = "Type";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(453, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Type";
             // 
             // typeTxtBox
             // 
-            typeTxtBox.Location = new Point(412, 55);
-            typeTxtBox.Name = "typeTxtBox";
-            typeTxtBox.Size = new Size(125, 27);
-            typeTxtBox.TabIndex = 6;
-            typeTxtBox.TextChanged += typeTxtBox_TextChanged;
+            this.typeTxtBox.Location = new System.Drawing.Point(412, 55);
+            this.typeTxtBox.Name = "typeTxtBox";
+            this.typeTxtBox.Size = new System.Drawing.Size(125, 27);
+            this.typeTxtBox.TabIndex = 6;
             // 
             // studentsBox
             // 
-            studentsBox.FormattingEnabled = true;
-            studentsBox.ItemHeight = 20;
-            studentsBox.Location = new Point(603, 55);
-            studentsBox.Name = "studentsBox";
-            studentsBox.Size = new Size(150, 104);
-            studentsBox.TabIndex = 7;
-            studentsBox.SelectedIndexChanged += studentsBox_SelectedIndexChanged;
+            this.studentsBox.FormattingEnabled = true;
+            this.studentsBox.ItemHeight = 20;
+            this.studentsBox.Location = new System.Drawing.Point(603, 55);
+            this.studentsBox.Name = "studentsBox";
+            this.studentsBox.Size = new System.Drawing.Size(150, 104);
+            this.studentsBox.TabIndex = 7;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(648, 20);
-            label4.Name = "label4";
-            label4.Size = new Size(66, 20);
-            label4.TabIndex = 8;
-            label4.Text = "Students";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(648, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Students";
             // 
             // classesBox
             // 
-            classesBox.FormattingEnabled = true;
-            classesBox.ItemHeight = 20;
-            classesBox.Location = new Point(412, 139);
-            classesBox.Name = "classesBox";
-            classesBox.Size = new Size(150, 104);
-            classesBox.TabIndex = 9;
-            classesBox.SelectedIndexChanged += classesBox_SelectedIndexChanged;
+            this.classesBox.FormattingEnabled = true;
+            this.classesBox.ItemHeight = 20;
+            this.classesBox.Location = new System.Drawing.Point(412, 139);
+            this.classesBox.Name = "classesBox";
+            this.classesBox.Size = new System.Drawing.Size(150, 104);
+            this.classesBox.TabIndex = 9;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(453, 106);
-            label5.Name = "label5";
-            label5.Size = new Size(56, 20);
-            label5.TabIndex = 10;
-            label5.Text = "Classes";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(453, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 20);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Classes";
             // 
             // schoolGridView
             // 
-            schoolGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            schoolGridView.Location = new Point(20, 201);
-            schoolGridView.Name = "schoolGridView";
-            schoolGridView.RowHeadersWidth = 51;
-            schoolGridView.RowTemplate.Height = 29;
-            schoolGridView.Size = new Size(300, 188);
-            schoolGridView.TabIndex = 11;
-            schoolGridView.CellContentClick += schoolGridView_CellContentClick;
+            this.schoolGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.schoolGridView.Location = new System.Drawing.Point(20, 201);
+            this.schoolGridView.Name = "schoolGridView";
+            this.schoolGridView.RowHeadersWidth = 51;
+            this.schoolGridView.RowTemplate.Height = 29;
+            this.schoolGridView.Size = new System.Drawing.Size(300, 188);
+            this.schoolGridView.TabIndex = 11;
+            this.schoolGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.schoolGridView_CellClick);
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(27, 161);
-            label6.Name = "label6";
-            label6.Size = new Size(60, 20);
-            label6.TabIndex = 12;
-            label6.Text = "Schools";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(27, 161);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Schools";
             // 
             // updateBtn
             // 
-            updateBtn.Location = new Point(620, 259);
-            updateBtn.Name = "updateBtn";
-            updateBtn.Size = new Size(94, 29);
-            updateBtn.TabIndex = 13;
-            updateBtn.Text = "Update";
-            updateBtn.UseVisualStyleBackColor = true;
-            updateBtn.Click += updateBtn_Click;
+            this.updateBtn.Location = new System.Drawing.Point(620, 259);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(94, 29);
+            this.updateBtn.TabIndex = 13;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // deleteBtn
             // 
-            deleteBtn.Location = new Point(551, 311);
-            deleteBtn.Name = "deleteBtn";
-            deleteBtn.Size = new Size(94, 29);
-            deleteBtn.TabIndex = 14;
-            deleteBtn.Text = "Delete";
-            deleteBtn.UseVisualStyleBackColor = true;
-            deleteBtn.Click += deleteBtn_Click;
+            this.deleteBtn.Location = new System.Drawing.Point(551, 311);
+            this.deleteBtn.Name = "deleteBtn";
+            this.deleteBtn.Size = new System.Drawing.Size(94, 29);
+            this.deleteBtn.TabIndex = 14;
+            this.deleteBtn.Text = "Delete";
+            this.deleteBtn.UseVisualStyleBackColor = true;
+            this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
             // 
             // ClearBtn
             // 
-            ClearBtn.Location = new Point(486, 360);
-            ClearBtn.Name = "ClearBtn";
-            ClearBtn.Size = new Size(94, 29);
-            ClearBtn.TabIndex = 15;
-            ClearBtn.Text = "Clear";
-            ClearBtn.UseVisualStyleBackColor = true;
-            ClearBtn.Click += ClearBtn_Click;
+            this.ClearBtn.Location = new System.Drawing.Point(486, 360);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(94, 29);
+            this.ClearBtn.TabIndex = 15;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // CloseBtn
             // 
-            CloseBtn.Location = new Point(620, 360);
-            CloseBtn.Name = "CloseBtn";
-            CloseBtn.Size = new Size(94, 29);
-            CloseBtn.TabIndex = 16;
-            CloseBtn.Text = "Close";
-            CloseBtn.UseVisualStyleBackColor = true;
-            CloseBtn.Click += CloseBtn_Click;
+            this.CloseBtn.Location = new System.Drawing.Point(620, 360);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(94, 29);
+            this.CloseBtn.TabIndex = 16;
+            this.CloseBtn.Text = "Close";
+            this.CloseBtn.UseVisualStyleBackColor = true;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // SchoolForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(CloseBtn);
-            Controls.Add(ClearBtn);
-            Controls.Add(deleteBtn);
-            Controls.Add(updateBtn);
-            Controls.Add(label6);
-            Controls.Add(schoolGridView);
-            Controls.Add(label5);
-            Controls.Add(classesBox);
-            Controls.Add(label4);
-            Controls.Add(studentsBox);
-            Controls.Add(typeTxtBox);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(adrressTxtBox);
-            Controls.Add(label1);
-            Controls.Add(createBtn);
-            Controls.Add(nameTxtBox);
-            Name = "SchoolForm";
-            Text = "SchoolForm";
-            ((System.ComponentModel.ISupportInitialize)schoolGridView).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CloseBtn);
+            this.Controls.Add(this.ClearBtn);
+            this.Controls.Add(this.deleteBtn);
+            this.Controls.Add(this.updateBtn);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.schoolGridView);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.classesBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.studentsBox);
+            this.Controls.Add(this.typeTxtBox);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.adrressTxtBox);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.createBtn);
+            this.Controls.Add(this.nameTxtBox);
+            this.Name = "SchoolForm";
+            this.Text = "SchoolForm";
+            ((System.ComponentModel.ISupportInitialize)(this.schoolGridView)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

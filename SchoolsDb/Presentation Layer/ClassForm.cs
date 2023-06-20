@@ -36,8 +36,7 @@ namespace Presentation_Layer
             {
                 if (ValidationManager.IsValidString(nameTxtBox.Text)
                     && ValidationManager.IsValidString(teacherTxtBox.Text)
-                    && ValidationManager.IsValidString(majorTxtBox.Text)
-                    && selectedClass != null)
+                    && ValidationManager.IsValidString(majorTxtBox.Text))
                 {
                     string name = nameTxtBox.Text;
                     string teacher = teacherTxtBox.Text;
